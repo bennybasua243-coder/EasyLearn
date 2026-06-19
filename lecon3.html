@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('3')">
+
+<div class="container fade-in">
+
+  <h1>III. Conventions de nommage</h1>
+
+  <h2>Explication :</h2>
+  <p>Pour avoir un peu d'ordre et d'uniformité dans le code, 
+    on utilise des <span style="color: aqua;">Conventions de nommage</span> pour les variables. Ce sont des règles 
+    créées par les développeurs pour que les noms de variables soient clairs et faciles à comprendre. </p>
+    <p>
+      <h3>Exemple :</h3>
+      mon<span style="color: red;">P</span>renom <br>
+      mon<span style="color: red;">_</span>age <br>
+      <span style="color: red;">M</span>on<span style="color: red;">N</span>om
+      
+   <h4>En Python, on utilise le snake_case :</h4>
+      <span style="padding-right: 400px;">- nom descriptif <br></span>
+      <span style="padding-right: 200px;">- toutes les lettres sont en minuscules <br></span>
+      <span style="padding-right: 200px;">- underscores (_) entre les mots <br> </span>
+      <span style="padding-right: 200px;">- pas de caractères spéciaux (é,à,&, etc.) <br></span>
+      <span style="padding-right: 200px;">- pas de chiffres au début <br></span>
+      <span style="padding-right: 163px;">- nom en anglais (si possible)</span>
+    </p>
+    
+  <h4>Exemple: </h4>score_player, game_level, player_name.
+  <br> <br>
+  <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+MonNom = "Baswa"
+mon_nom = "Baswa"
+monNom = "Baswa"
+print(mon_nom)
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+
+<span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+</span>  
+  <button class="btn" onclick="goToQuiz('quiz3')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

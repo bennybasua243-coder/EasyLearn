@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('7')">
+
+<div class="container fade-in">
+
+  <h1>VII. Longueur des strings avec len()</h1>
+
+  <h2>Explication :</h2>
+  <p>En Python, nous pouvons savoir combien de caractères se trouvent dans un string en utilisant la fonction<span style="color
+  : #06b6d4;"> len()</span><br> ( abréviation du mot anglais <span style="color
+  : #06b6d4;"> lenght</span> qui veut dire <span style="color
+  : #06b6d4;">Longueur</span> ). Elle prend une valeur ( comme un texte ) et retourne sa Longueur.
+  les espaces aussi sont comptée comme des caractères.  
+    <h2>Exemples :</h2>
+    <!-- 🔹 Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+mot = "FASI"
+print(len(mot))
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+    
+  </p>
+  <P>Ici on peut avoir un apercu de ce que peut faire len(), elle peut renvoyer le nombre de lettre se trouvant dans une 
+    chaîne de caractères.
+  </P>
+        <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+
+  <button class="btn" onclick="goToQuiz('quiz7')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

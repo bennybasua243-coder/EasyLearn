@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  
+
+  <div class="question">
+    <p>1. Combien de langages de programmation existent :</p>
+
+    
+    <button onclick="answer(this,false)">5 langages</button>
+    <button onclick="answer(this,false)">10 langages</button>
+    <button onclick="answer(this,false)">un seul</button>
+    <button onclick="answer(this,true)">Trop nombreux pour les compter </button>
+
+    <p class="msg"></p>
+  </div>
+    <div class="question">
+    <p>2. Le créateur de Python est :</p>
+
+    
+    <button onclick="answer(this,false)">jean Romain</button>
+    <button onclick="answer(this,false)">Noctis</button>
+    <button onclick="answer(this,true)">Guido van Rossum</button>
+    <button onclick="answer(this,false)">Alpha code</button>
+
+    <p class="msg"></p>
+  </div>
+  <div class="question">
+    <p>3. En quelle année Python à été créé :</p>
+
+    
+    <button onclick="answer(this,false)">1960</button>
+    <button onclick="answer(this,true)">1991</button>
+    <button onclick="answer(this,false)">1995</button>
+    <button onclick="answer(this,false)">2000</button>
+
+    <p class="msg"></p>
+  </div>
+
+
+  <button class="btn" onclick="finishQuiz('2')">
+    Terminer 
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

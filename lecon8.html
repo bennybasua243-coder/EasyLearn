@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('8')">
+
+<div class="container fade-in">
+
+  <h1>VIII. Indexation des chaînes</h1>
+
+  <h2>Explication :</h2>
+  <p>En Python, tu peux accéder aux caractères individuels d'une chaîne 
+    en utilisant l'Indexation. <br> Chaque caractère a une position (index) dans la chaîne,
+    commençant à 0 pour le prémier caractère. <br>
+    <h3>Exemple :</h3>
+    <span> nom = N O C T I S </span> <br>
+    <span>index= 0 1 2 3 4 5 </span> <br><br>
+    Pour accéder à un caractère spécifique, on utilise 
+    <span style="color
+  : #06b6d4;"> [ ] </span><br> avec le numéro  <span style="color
+  : #06b6d4;">d'index</span>.  
+    <h2>Exemples :</h2>
+    <!-- 🔹 Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+mot = "FASI"
+premier_caractere = mot[0]
+print(mot)
+print(premier_caractere)
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+   
+  </p>
+    <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+
+  <button class="btn" onclick="goToQuiz('quiz8')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

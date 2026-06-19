@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 12</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('12')">
+
+<div class="container fade-in">
+
+  <h1>XII. Indices négatifs dans le découpage</h1>
+
+  <h2>Explication :</h2>
+  <p>Python permet aussi <span style="color: aqua;">"des indices négatives"</span>
+     dans le découpage. <br>
+    Les indices négatifs comptent à partir de la fin de la chaîne. <br>
+    Donc à partir du dernier caractère  
+    <br>
+    - <span style="color: aqua;">-1</span> fait référence au dernier caractère.<br>
+    - <span style="color: aqua;">-2</span> fait référence à l'avant-dernier caractère.<br>
+    - Et ainsi de suite...<br>
+    <h3>Exemple :</h3>
+    <p> nom = "informatique" <br> premiere_partie = nom[-3:]</p>
+    <p> nom = "informatique" <br> deuxieme_partie = nom[:-2]</p>
+    <h3>Exemple :</h3>
+    <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+nom = "informatique"
+#les trois derniers charactères
+premiere_partie = nom[-3:]
+#Tous sauf les deux dernier charactères
+deuxieme_partie = nom[:-2]
+texte_entier = nom[:]
+print("nom : ", nom)
+print("premiere_partie :", premiere_partie)
+print("deuxieme_partie :", deuxieme_partie)
+print("texte entier : ", texte_entier)
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+    
+ 
+  </p>
+   <br>
+  <button class="btn" onclick="goToQuiz('quiz12')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

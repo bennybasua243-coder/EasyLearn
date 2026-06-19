@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Pour écrire correctement une variable booléenne, on fait : </p>
+
+    <button onclick="answer(this,false)">Monprenom = True</button>
+    <button onclick="answer(this,false)">MonPrenom = true</button>
+    <button onclick="answer(this,true)">MonPrenom = True</button>
+    <button onclick="answer(this,false)">monPrenom = TRUE</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que sera t'il affiché sur la console si on fait : <br> NomComplet = "Benny Baswa" <br>
+    valeur = True
+    print(NomComplet)
+    print(valeur)
+        </p>
+
+    <button onclick="answer(this,true)"> Benny Baswa <br> True </button>
+    <button onclick="answer(this,false)">Benny <br> True</button>
+    <button onclick="answer(this,false)">Une erreur</button>
+    <button onclick="answer(this,false)">Benny Baswa <br> true</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Que sera t'il affiché si on fait : <br> nom = "informatique" <br> valeur = True  </p>
+
+    <button onclick="answer(this,false)"> Benny Baswa <br> True </button>
+    <button onclick="answer(this,true)">rien ne sera affiché </button>
+    <button onclick="answer(this,false)">Une erreur</button>
+    <button onclick="answer(this,false)">Benny Baswa <br> true</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('fin')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('4')">
+
+<div class="container fade-in">
+
+  <h1>IV. Types des données</h1>
+
+  <h2>Explication :</h2>
+  <p>En Python les variables peuvent contenir differents <span style="color: #06b6d4;">types de données.</span> Par exemple, du texte, des chiffres ou autre. 
+    Dans ce cours nous verons 4 types de données que peut contenir une variable. </p>
+    <p> <h2>Nous allons voir :</h2>
+      - Les variables de type <span style="color: aqua;">strings(str)</span> <br>
+  
+   - Les variables de type <span style="color: aqua;">int</span> <br>
+   - Les variables de type <span style="color: aqua;">float</span> <br>
+
+      - Les variables de type <span style="color: aqua;">booléens(bool)</span> <br>
+    <br>
+      <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+# variable de type strings ou str 
+nom = "Baswa"
+print(type(nom))
+# variable de type int
+age = 12
+print(type(age))
+# variable de type float
+taille = 2.01
+print(type(taille))
+# variable de type booléens ou bool
+valeur = True
+print(type(valeur))
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+<span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+  <button class="btn" onclick="goToQuiz('quiz4')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

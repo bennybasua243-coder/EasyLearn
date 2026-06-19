@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 13</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('13')">
+
+<div class="container fade-in">
+
+  <h1>XIII. Introduction aux booléens</h1>
+
+  <h2>Explication :</h2>
+  <p>Le type <span style="color: aqua;">booléens</span> est un type de variable spécial qui ne peut 
+    avoir que deux valeurs : <span style="color: aqua;">True</span>(vrai) ou 
+    <span style="color: aqua;">False</span>(faux) <br> (Il faut surtout faire attention aux majuscules.)
+     <br>
+    Il est utilisé pour représenter des valeurs de vérité en progammmation. <br>
+    Et même si ça ne semble pas très ipréssionnant et assez facile, c'est en fait l'un des types les 
+    plus importants en programmation !
+    
+    <h3>Exemple :</h3>
+    <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+        <br>
+        <br>
+        <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+JeSuisEnFasi = True
+print(JeSuisEnFasi)
+JeSuisEnDroit = False
+print(JeSuisEnDroit)
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+    
+ 
+  </p>
+   <br>
+  <button class="btn" onclick="goToQuiz('quiz13')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

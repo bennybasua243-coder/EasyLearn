@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('10')">
+
+<div class="container fade-in">
+
+  <h1>X. Introduction au découpage de chaîne (slicing) </h1>
+
+  <h2>Explication :</h2>
+  <p>Le découpage de chaînes (slicing) est une façon d'extraire 
+    une partie d'une chaîne (une sous-chaîne). C'est comme couper un morceau.
+    <br>
+    La syntaxe de base pour le découpage est : <br>
+    <span style="color: #06b6d4;">string[début:fin]</span>
+    Dans le quel : <br>
+    - début estv l'indice où commence le découpage(inclus) <br>
+    - fin est l'indice où se termine le découpage (exclus)
+    <h3>Exemple :</h3>
+    <p> nom = "informatique" <br> premiere_partie = nom[0:5]</p>
+    <h3>Exemple :</h3>
+    
+  <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+nom = "informatique"
+premiere_partie = nom[0:5]
+deuxieme_partie = nom[5:12]
+print("nom : ", nom)
+print(f"premiere_partie :", premiere_partie)
+print(f"deuxieme_partie :", deuxieme_partie)
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>  
+    
+ 
+  </p>
+   <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+  <button class="btn" onclick="goToQuiz('quiz10')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

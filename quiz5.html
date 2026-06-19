@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Choisisez la variable avec un nom et une valeur correct :</p>
+
+    <button onclick="answer(this,false)">MOn_nom = "Baswa"</button>
+    <button onclick="answer(this,false)">Maprommotion = 'je suis en L1'</button>
+    <button onclick="answer(this,true)">mon_surnom = "Noctis"</button>
+    <button onclick="answer(this,false)">MonÂge = "10"</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Choisisez la variable avec un nom et une valeur incorrect :</p>
+
+    <button onclick="answer(this,false)"> mon_age = '20'</button>
+    <button onclick="answer(this,false)">MonNom = "Je ne sais pas"</button>
+    <button onclick="answer(this,false)">ma_faculte = "FASI"</button>
+    <button onclick="answer(this,true)">Monprenom = "Benny"</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Quelle affirmation est correct :</p>
+
+    <button onclick="answer(this,false)">Une chaîne de caractères est un nombre</button>
+    <button onclick="answer(this,true)">Une chaîne est toujours entre guillemets</button>
+    <button onclick="answer(this,false)">Une chaîne ne peut pas contenir de texte</button>
+    <button onclick="answer(this,false)">Python n'utilise pas les chaînes</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('6')">
+     Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. En Python pour découper un str on utilise :</p>
+
+    <button onclick="answer(this,false)">/* */</button>
+    <button onclick="answer(this,false)">+</button>
+    <button onclick="answer(this,true)">[ ]</button>
+    <button onclick="answer(this,false)">{ : }</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que sera t'il obtenu si on fait : <br> NomComplet = "Benny Baswa" <br>
+    premiere_partie = NomComplet[0:5]
+        <br>print(premiere_partie)</p>
+
+    <button onclick="answer(this,false)"> Rien</button>
+    <button onclick="answer(this,false)">I</button>
+    <button onclick="answer(this,false)">B</button>
+    <button onclick="answer(this,true)">Benny</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Dans [début:fin] le début c'est : </p>
+
+    <button onclick="answer(this,false)">Le position d'un texte </button>
+    <button onclick="answer(this,false)">L'indice qui termine la chaîne</button>
+    <button onclick="answer(this,true)">L'indice ou commence le découpage</button>
+    <button onclick="answer(this,false)">L'indice ou se trouve le premier caractère d'un string</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('11')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

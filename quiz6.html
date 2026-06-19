@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Quel est le symbole utilisé pour la Concaténation :</p>
+
+    <button onclick="answer(this,false)">//</button>
+    <button onclick="answer(this,false)">*</button>
+    <button onclick="answer(this,true)">+</button>
+    <button onclick="answer(this,false)">-</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que sera t'il obtenu si on fait : <br> NomComplet = "Benny Baswa" <br>
+    print("Bonjour " + NomComplet)</p>
+
+    <button onclick="answer(this,false)"> Bonjour Benny</button>
+    <button onclick="answer(this,false)">Benny Baswa</button>
+    <button onclick="answer(this,false)">Bonjour BennyBaswa</button>
+    <button onclick="answer(this,true)">Bonjour Benny Baswa</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Choisisez l'assertion correct :</p>
+
+    <button onclick="answer(this,false)">La Concaténation consiste à séparer plusieurs chaînes de caractères</button>
+    <button onclick="answer(this,false)">La Concaténation consiste diviser du texte </button>
+    <button onclick="answer(this,true)">La Concaténation consiste à assembler plusieurs chaînes de caractères.</button>
+    <button onclick="answer(this,false)">La Concaténation permet de compter des chiffres </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('7')">
+     Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

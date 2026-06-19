@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('6')">
+
+<div class="container fade-in">
+
+  <h1>VI. Concaténation</h1>
+
+  <h2>Explication :</h2>
+  <p>La Concaténation consiste à assembler plusieurs chaînes de caractères pour former 
+    un seul texte. <br> En Python, on utilise l'opérateur + pour coller les textes entre eux.
+    <br> Chaque élément doit être une chaîne (sinon il faut le convertir).
+    <h2>Exemples :</h2>
+    <!-- 🔹 Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+mot = "FASI"
+print("Bonjour la " + mot)
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+    
+  </p>
+      <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+
+  <button class="btn" onclick="goToQuiz('quiz6')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

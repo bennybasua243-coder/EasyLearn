@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. A quoi sert une variable :</p>
+
+    <button onclick="answer(this,true)">stocker des informations</button>
+    <button onclick="answer(this,false)">stocker de l'argent</button>
+    <button onclick="answer(this,false)">Envoyer un message</button>
+    <button onclick="answer(this,false)">garder la nourriture</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+   <div class="question">
+
+    <p>2. Combien d'information contient une variable :</p>
+
+    <button onclick="answer(this,false)">4 informations</button>
+    <button onclick="answer(this,false)">Une seule</button>
+    <button onclick="answer(this,false)">2 informations </button>
+    <button onclick="answer(this,true)">3 informations</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ <div class="question">
+
+    <p>3. Quelle sont les informations que stocke une variable :</p>
+
+    <button onclick="answer(this,false)"> contenu,  couleur, nom</button>
+    <button onclick="answer(this,false)">nom, type, positionnement </button>
+    <button onclick="answer(this,true)">nom, vateur, type</button>
+    <button onclick="answer(this,false)">contenu, Valeur, type</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+   <button class="btn" onclick="finishQuiz('3')">
+    Terminer 
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

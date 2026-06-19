@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. Choisisez la variable avec un nom correct :</p>
+
+    <button onclick="answer(this,false)">moncours</button>
+    <button onclick="answer(this,false)">Moncours</button>
+    <button onclick="answer(this,true)">MonCours</button>
+    <button onclick="answer(this,false)">MonÂge</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Choisisez la variable avec un nom incorrect :</p>
+
+    <button onclick="answer(this,false)"> mon_age</button>
+    <button onclick="answer(this,false)">MonNom</button>
+    <button onclick="answer(this,false)">mesCours</button>
+    <button onclick="answer(this,true)">Monprenom</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.  Choisisez la variable avec un nom correct :</p>
+
+    <button onclick="answer(this,true)">MonProfil</button>
+    <button onclick="answer(this,false)">mesamies</button>
+    <button onclick="answer(this,false)">Moncahier</button>
+    <button onclick="answer(this,false)">Mamusique</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('4')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('2')">
+
+<div class="container fade-in">
+
+  <h1>II. Variables</h1>
+
+  <h2>Explication :</h2>
+  <p>Quand tu as besoin de <span style="color: #06b6d4;">stocker</span> des informations pour les utiliser plus tard. <br>
+    Par exemple, de l'argent ou de la nourriture. <br> Pour faire ça tu vas utiliser des variables. </p>
+    <p> Une variable est un espace dans la mémoire de ton appareil qui <strong style="color: #06b6d4;">stocke les informations</strong>. <br> Plus précisément
+      , 3 informations : <br>
+      <br>
+          <span style="padding-right: 85px;">- <strong>Un <span style="color: #06b6d4;">Nom</span> </strong> → comment tu l'appelle <br></span>     
+          - <strong>Un <span style="color: orange;">Type</span></strong> → quel type de données elle contient <br>
+          <span style="padding-right: 40px;">- <strong > Une <span style="color: red; ">Valeur</span></strong> → la donnée qu'elle contient</span>
+  
+    </p>
+    
+ <h2>Exemple :</h2>
+  <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+#Exemple de variable
+nom = "Baswa"
+print(nom)
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+<br><br>
+<span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run
+pour l'executer.
+</span>  
+  <button class="btn" onclick="goToQuiz('quiz2')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

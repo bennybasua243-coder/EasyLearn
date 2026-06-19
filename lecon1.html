@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>I. Python - Introduction</h1>
+
+  <h2>Explication</h2>
+  <p>Il existe un <strong style="color: #06b6d4;">PAQUET de langages de programmation</strong> . 
+    Certains servent à créer des site web, des jeux, d'autres à parler aux bases 
+    de données, etc... <br>
+    Dans cette leçon, on va apprendre le 
+    <strong  style="color: #06b6d4;">Python !</strong> <br>
+    C'est l'un des langages les plus populaires et facile à apprendre. Il est utilisé par Instagram,
+    Google, et même la NASA ! <br>
+    Ce langange à été Créé par <strong  style="color: #06b6d4;">Guido van Rossum</strong> en
+     <strong  style="color: #06b6d4;">1991</strong>.
+  </p>
+  <h2>Print ()</h2>
+    <p>En python, print() est une fonction qui permet d'envoyer des informations vers 
+      la console, c.à.d l'ecran où s'affichent les résultats de ton progamme.</p>
+  <h2>Exemple :</h2>
+  <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+print("Bonjour la FASI")
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+  
+
+  <button class="btn" onclick="goToQuiz('quiz1')">
+    Continuer vers le Quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

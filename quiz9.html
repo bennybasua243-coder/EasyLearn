@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. En Python pour l'Indexation on utilise :</p>
+
+    <button onclick="answer(this,false)">/* */</button>
+    <button onclick="answer(this,false)">+</button>
+    <button onclick="answer(this,true)">[ ]</button>
+    <button onclick="answer(this,false)">{ }</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que sera t'il obtenu si on fait : <br> NomComplet = "Benny Baswa" <br>
+    dernier_caractere = NomComplet[0]
+        <br>print(mon_caractere)</p>
+
+    <button onclick="answer(this,false)"> Rien</button>
+    <button onclick="answer(this,false)">I</button>
+    <button onclick="answer(this,false)">B</button>
+    <button onclick="answer(this,true)">une erreur</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Choisisez l'assertion correct :</p>
+
+    <button onclick="answer(this,false)">L'index est le nombre de chiffres qu'il y a dans un string.</button>
+    <button onclick="answer(this,false)">L'index permet de séparer du texte.</button>
+    <button onclick="answer(this,true)">L'index est la position de chaque caractère dans un string.</button>
+    <button onclick="answer(this,false)">L'index permet de compter des chiffres </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('10')">
+     Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

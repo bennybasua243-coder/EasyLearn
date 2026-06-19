@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. En Python pour le découpage avec indices négatifs on utilise :</p>
+
+    <button onclick="answer(this,false)">/* */</button>
+    <button onclick="answer(this,false)">+</button>
+    <button onclick="answer(this,true)">[ ]</button>
+    <button onclick="answer(this,false)">{ }</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que sera t'il affiché sur la console si on fait : <br> NomComplet = "Benny Baswa" <br>
+    texte = NomComplet[-3:]
+    print(texte)
+        </p>
+
+    <button onclick="answer(this,true)"> Ben</button>
+    <button onclick="answer(this,false)">Benn</button>
+    <button onclick="answer(this,false)">Une erreur</button>
+    <button onclick="answer(this,false)">swa</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Que sera t'il affiché si on fait : <br> nom = "informatique" <br> nom_en_partie = nom[:-4],nom[-7:] <br> print("texte entier : ", nom_en_partie ) </p>
+
+    <button onclick="answer(this,false)">informatique</button>
+    <button onclick="answer(this,true)">texte entier : ('ique', 'infor')</button>
+    <button onclick="answer(this,false)">texte entier : ('informa', 'ique')</button>
+    <button onclick="answer(this,false)">texte enier : ('informa', 'tique')</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('13')">
+    🎯 Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

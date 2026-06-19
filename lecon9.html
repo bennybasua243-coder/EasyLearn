@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 9</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('9')">
+
+<div class="container fade-in">
+
+  <h1>IX. Indexation négative </h1>
+
+  <h2>Explication :</h2>
+  <p>Python permet aussi d'utiliser des indices négatifs pour accéder 
+    depuis la fin chaîne :<br>
+    -  -1 fait référence au dernier caractère <br>
+    -  -2 fait référence à l'avant dernier caractère <br>
+    -  Et ainsi de suite...
+    <h3>Exemple :</h3>
+    <span style=" font-size: 20px;"> nom =  N  O  C  T  I  S </span> <br>
+    <span style="color: aqua; font-size: 15px;"> index = -6 -5 -4 -3 -2 -1  </span> <br><br>
+    Pour accéder à un caractère spécifique, on utilise 
+    <span style="color
+  : #06b6d4;"> [ ] </span><br> avec le numéro  <span style="color
+  : #06b6d4;">d'index</span>.  
+    <h2>Exemples :</h2>
+    <!--  Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+mot = "FASI"
+dernier_caractere = mot[-1] 
+print(mot)
+print(dernier_caractere)
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+    
+
+  </p>
+ <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+
+  <button class="btn" onclick="goToQuiz('quiz9')">
+    Continuer vers le quiz
+  </button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

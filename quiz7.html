@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. <span style="color: aqua;">len()</span> en français signifie :</p>
+
+    <button onclick="answer(this,false)">Taille</button>
+    <button onclick="answer(this,false)">Hauteur</button>
+    <button onclick="answer(this,true)">Longueur</button>
+    <button onclick="answer(this,false)">Largueur</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Que sera t'il obtenu si on fait : <br> NomComplet = "Benny Baswa" <br>
+    print(len(NomComplet))</p>
+
+    <button onclick="answer(this,false)"> 10</button>
+    <button onclick="answer(this,false)">9</button>
+    <button onclick="answer(this,false)">12</button>
+    <button onclick="answer(this,true)">11</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3. Choisisez l'assertion correct :</p>
+
+    <button onclick="answer(this,false)">len () permet de changer la couleur du texte</button>
+    <button onclick="answer(this,false)">len () permet de savoir le nombre de caractères se trouvant dans la mémoire d'un jeu</button>
+    <button onclick="answer(this,true)">len () permet de savoir le nombre de caractères se trouvant dans un string</button>
+    <button onclick="answer(this,false)">len () permet de compter des chiffres </button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('8')">
+     Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+  <h1>🧠 Quiz :</h1>
+
+  <!-- =========================
+       QUESTION 1
+  ========================== -->
+  <div class="question">
+
+    <p>1. "Noctis" est une variable de type :</p>
+
+    <button onclick="answer(this,true)">strings</button>
+    <button onclick="answer(this,false)">booléens</button>
+    <button onclick="answer(this,false)">int</button>
+    <button onclick="answer(this,false)">float</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       QUESTION 2
+  ========================== -->
+  <div class="question">
+
+    <p>2. Combien de types de variable avons nous vu :</p>
+
+    <button onclick="answer(this,false)"> 3 types</button>
+    <button onclick="answer(this,false)">5 types </button>
+    <button onclick="answer(this,true)">4 types</button>
+    <button onclick="answer(this,false)">2 types</button>
+
+    <p class="msg"></p>
+
+  </div>
+  
+  <!-- =========================
+       QUESTION 3
+  ========================== -->
+ 
+   <div class="question">
+
+    <p>3.   Quels sont les types de variables qu'on a vu :</p>
+
+    <button onclick="answer(this,false)">bool, str, int, boolean</button>
+    <button onclick="answer(this,false)">bool, floet, strings</button>
+    <button onclick="answer(this,false)">bool, int, floet</button>
+    <button onclick="answer(this,true)">strings, int, booléens, float</button>
+
+    <p class="msg"></p>
+
+  </div>
+
+  <!-- =========================
+       BOUTON FIN
+  ========================== -->
+  <button onclick="finishQuiz('5')">
+     Terminer le quiz
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

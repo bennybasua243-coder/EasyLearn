@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Leçon 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAccess('5')">
+
+<div class="container fade-in">
+
+  <h1>V. Les strings(str)</h1>
+
+  <h2>Explication :</h2>
+  <p>Une chaîne de caractères (ou string) est simplement<span style="color
+  : #06b6d4;"> du texte.</span> En Python une chaîne de caractères est tout ce qui est entouré par
+  des guillemets double.  <span style="color
+  : #06b6d4;"> ""</span> et/ou des guillemets simples <span style="color
+  : #06b6d4;"> ''</span> : <br> <br>
+  <span style="padding-right: 180px;">- <span style="color: red;">"" </span> (guillemets doubles) <br></span>
+  <span style="padding-right: 180px;">- <span style="color: red;">'' </span> (guillemets simples)</span> <br>
+  <br>
+  Il est aussi important de savoir que même un nombre entre guillemets est 
+  une chaîne de caractères. <br>
+  </p>
+  <h2>Exemples:</h2>
+  <!-- 🔹 Bloc d'un exemple Python -->
+<div class="bloc-code">
+
+    <!-- Zone où l'utilisateur voit/modifie le code -->
+    <textarea class="code">
+surnom = "Noctis"
+print(type(surnom))
+message = 'Bonjour la L1 FASI'
+print(type(message))
+age = "12"
+print(type(age))
+
+    </textarea>
+
+    <!-- Bouton pour exécuter le code -->
+    <button onclick="runCode(this)">Run</button>
+
+    <!-- Zone où le résultat va s'afficher -->
+    <pre class="output">Résultat ici...</pre>
+
+</div>
+    <span style="color: aqua;">Ecrivez votre propre code et testez le en cliquant sur Run.
+
+  <button class="btn" onclick="goToQuiz('quiz5')">
+    Continuer vers le quiz
+  </button>
+</div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
