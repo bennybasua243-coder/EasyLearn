@@ -214,29 +214,66 @@ footer{
 
 
 
-/* MOBILE */
-@media (max-width:768px){
+/* =======================================
+   📱 RESPONSIVE SMARTPHONE & TABLETTE
+========================================== */
+@media (max-width: 768px) {
 
-  .hero{
-    flex-direction:column;
-    text-align:center;
+  /* Ajustement de la barre de navigation */
+  nav {
+    padding: 15px 20px; /* On réduit les marges internes pour gagner de la place */
   }
 
-  .hero h1{
-    font-size:40px;
+  nav h1 {
+    padding-left: 0 !important; /* CRUCIAL : Supprime le décalage de 800px sur mobile */
+    font-size: 22px;
   }
 
-  .hero img{
-    width:250px;
-    margin-top:20px;
+  /* Section de bienvenue (Hero) */
+  .hero {
+    flex-direction: column-reverse; /* Met l'image en haut et le texte en dessous sur mobile */
+    text-align: center;
+    padding: 60px 20px;
+    gap: 30px;
   }
 
-  .features{
-    flex-direction:column;
-    padding:40px;
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin: 15px auto 0 auto;
+  }
+
+  .hero img {
+    width: 200px; /* Taille de l'image réduite pour les petits écrans */
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Section des fonctionnalités (Cards) */
+  .features {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px; /* Ajoute un espace propre entre chaque carte empilée */
+  }
+
+  .card {
+    padding: 25px;
+    text-align: center;
+  }
+
+  /* Section d'appel à l'action (CTA) */
+  .cta {
+    padding: 60px 20px;
+  }
+
+  .cta h2 {
+    font-size: 24px; /* Évite que le texte du menu soit trop gros et sorte de l'écran */
   }
 }
-
 </style>
 </head>
 
@@ -255,7 +292,7 @@ footer{
   <div class="site-title">Menu</div>
   
   <a href="CourPython.html">Apprendre Python</a>
-  <a href="CourPython.html">Apprendre C</a>
+
   <a href="#">Quitter</a>
   
 </div>
