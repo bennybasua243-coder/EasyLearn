@@ -161,29 +161,48 @@ button {
     min-height: 40px; /* garde un espace même vide */
 }
 
-/* 📱 Responsive (téléphone) */
-@media (max-width: 600px) {
-    .code {
-        height: 140px; /* plus petit sur mobile */
-    }
-}
-
 /* =========================
-   📱 RESPONSIVE MOBILE
+   📱 RESPONSIVE ADAPTATIF
 ========================= */
+
+/* Pour les écrans de smartphones (jusqu'à 600px) */
 @media (max-width: 600px) {
+  body {
+    padding: 10px; /* Moins d'espace perdu sur les bords de l'écran */
+  }
 
   .container {
-    max-width: 95%;
-    padding: 18px;
+    width: 100%;
+    max-width: 92%; /* La carte prendra une belle largeur sur le téléphone */
+    padding: 20px 15px;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
   }
 
   button, .btn {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .code {
+    height: 150px; /* Ajustement de la zone de code */
+  }
+}
+
+/* Pour les tablettes et ordinateurs (écrans plus grands que 600px) */
+@media (min-width: 601px) {
+  .container {
+    max-width: 550px; /* On élargit un peu pour que ce soit plus lisible sur grand écran */
+    padding: 35px;
   }
 }
